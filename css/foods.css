@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/* 메인메뉴 위치 */
+.main_menu>ul:nth-child(4)>li:nth-child(1)>a {
+    color: #d6264e;
+    border-bottom: 3px solid #d6264e;
+    box-sizing: border-box;
+}
+
+/* 서브 탑 이미지 , 현재페이지 위치 */
+.subtop {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+
+.subtop>div {
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    background-image: url(../images/foods/topimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+.subtop>div>h3 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 130px;
+}
+
+.subtop>div>p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+.subtop>ul {
+    margin-top: 23px;
+    margin-left: 100px;
+    width: 1400px;
+    height: 15px;
+    height: 15px;
+    position: relative;
+}
+
+.subtop>ul>li {
+    float: left;
+}
+
+.subtop>ul>li:first-child {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    border-left: 3px solid #666;
+}
+
+.subtop>ul>li>a {
+    display: inline-block;
+    height: 15px;
+    margin: 0 10px;
+}
+
+
+.subtop>ul>li:nth-child(2):after {
+    content: ">";
+    display: inline-block;
+    clear: both;
+}
+
+
+/* 완제품 분류 */
+
+.cate_name {
+    width: 1400px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.cate_name>ul>li {
+    display: inline-block;
+}
+
+.cate_name>ul>li>input {
+    display: none;
+}
+
+
+.cate_name>ul>li>label {
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 0 10px;
+}
+
+
+.cate_name>ul>li>label:hover {
+    color: #d6264e;
+}
+
+.cate_name>ul>li:after {
+    content: "|";
+    display: inline-block;
+    clear: both;
+    position: absolute;
+}
+
+.cate_name>ul>li:last-child:after {
+    content: "";
+}
+
+/* 상품전체 */
+
+.allproduct {
+    width: 1400px;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.product {
+    width: 280px;
+    padding: 0 10px 30px 10px;
+    float: left;
+}
+
+.product>a {
+    display: inline-block;
+    width: 280px;
+    height: 280px;
+}
+
+.product>a:hover {
+    opacity: 0.5;
+}
+
+.product>ul {
+    margin-top: 10px;
+    width: 250px;
+    height: 60px;
+    float: left;
+}
+
+.product>ul>li>h4 {
+    color: #000;
+    width: 240px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+}
+
+.addcart {
+    display: inline-block;
+    background-image: url(../images/add_cart.png);
+    background-size: 100%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-top: 13px;
+}
+
+.addcart:hover {
+    background-image: url(../images/add_cart_hover.png);
+    background-size: 100%;
+}
+
+.product>a>span {
+    position: absolute;
+    display: inline-block;
+    margin: 5px;
+    width: 40px;
+    height: 23px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.new {
+    background-color: rgb(255, 217, 0);
+    color: #000;
+}
+
+.best {
+    background-color: #ff839b;
+    color: #fff;
+}
+
+.won {
+    font-size: 0.8em;
+}
+
+.allproduct:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 더보기 */
+
+.plus {
+    width: 1200px;
+    padding: 0 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plus>button {
+    width: 100%;
+    height: 50px;
+    background-color:  #fff;
+    font-size: 1.3em;
+    cursor: pointer;
+    border: 1px solid #999;
+}

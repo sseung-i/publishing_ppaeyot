@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* 메인메뉴 위치 */
+.main_menu>ul:nth-child(4)>li:nth-child(2)>a {
+    color: #d6264e;
+    border-bottom: 3px solid #d6264e;
+    box-sizing: border-box;
+}
+
+
+
+/* 서브 탑 이미지 , 현재페이지 위치 */
+.subtop {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+
+.subtop>div {
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    background-image: url(../images/share/topimg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+.subtop>div>h3 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 130px;
+}
+
+.subtop>div>p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 10px;
+    text-shadow: 0px 0px 5px #000;
+}
+
+
+/* 내용시작 */
+
+.coninfo {
+    text-align: center;
+}
+
+.coninfo>h2 {
+    line-height: 100px;
+    font-size: 26px;
+}
+
+.coninfo>div:nth-child(2) {
+    font-size: 21px;
+    line-height: 2.5em;
+    margin-bottom: 150px;
+}
+
+.coninfo>div:nth-child(2)>span {
+    display: inline-block;
+    font-size: 36px;
+    color: #ff839b;
+    padding: 40px 0;
+}
+
+
+.share_in {
+    width: 100%;
+    background-color: #000;
+}
+
+.share_in>div {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+}
+
+.help, .diary, .tip {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    transition: all 1.5s;
+}
+
+.share_in>div:hover #bg{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.help {
+    background-image: url(../images/share/share_bg1.png);
+}
+
+.diary {
+    background-image: url(../images/share/share_bg2.png);
+}
+
+.tip {
+    background-image: url(../images/share/share_bg3.png);
+}
+
+.share_in>div>div:nth-child(1) {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 100;
+    top: 50px;
+    box-sizing: border-box;
+    padding: 60px 70px;
+}
+
+.help_text, .tip_text {
+    left: 100px;
+}
+
+.diary_text {
+    right: 100px;
+}
+
+.share_in>div>div:nth-child(1)>h3 {
+    font-size: 26px;
+    color: #d6264d;
+    margin-bottom: 20px;
+}
+
+.share_in>div>div:nth-child(1)>p {
+    font-size: 19px;
+    line-height: 1.7em;
+    color: #000;
+}
+
+.share_in>div>div:nth-child(1)>a {
+    position: absolute;
+    bottom: 60px;
+    left: 70px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #d6264d;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 50px;
+    float: left;
+    color: #fff;
+}
+
+.share_in>div>div:nth-child(1)>a:hover {
+    animation: buttonmove 0.7s infinite;
+}
+
+@keyframes buttonmove {
+    0% {margin-left:0px;}
+    50% {margin-left:20px;}
+    100% {margin-left:0px;}
+}
